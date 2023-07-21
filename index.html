@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading" onclick="reset()">
+            Infinite Calendar
+        </h1>
+        <div class="calender">
+            <div class="result"></div>
+            <div class="selectors">
+                <div class="days">
+                    <ul class="day_selector selector"></ul>
+                </div>
+                <div class="months">
+                    <ul class="month_selector selector">
+                        <li class="month" onmouseover="showAllMonths()" onmouseout="hideAllMonths()"
+                            onclick="selectMonth(1)">January</li>
+                        <li class="month" onmouseover="showAllMonths()" onmouseout="hideAllMonths()"
+                            onclick="selectMonth(2)">February</li>
+                        <li class="month" onmouseover="showAllMonths()" onmouseout="hideAllMonths()"
+                            onclick="selectMonth(3)">March</li>
+                        <li class="month" onmouseover="showAllMonths()" onmouseout="hideAllMonths()"
+                            onclick="selectMonth(4)">April</li>
+                        <li class="month" onmouseover="showAllMonths()" onmouseout="hideAllMonths()"
+                            onclick="selectMonth(5)">May</li>
+                        <li class="month" onmouseover="showAllMonths()" onmouseout="hideAllMonths()"
+                            onclick="selectMonth(6)">June</li>
+                        <li class="month" onmouseover="showAllMonths()" onmouseout="hideAllMonths()"
+                            onclick="selectMonth(7)">July</li>
+                        <li class="month" onmouseover="showAllMonths()" onmouseout="hideAllMonths()"
+                            onclick="selectMonth(8)">August</li>
+                        <li class="month" onmouseover="showAllMonths()" onmouseout="hideAllMonths()"
+                            onclick="selectMonth(9)">September</li>
+                        <li class="month" onmouseover="showAllMonths()" onmouseout="hideAllMonths()"
+                            onclick="selectMonth(10)">October</li>
+                        <li class="month" onmouseover="showAllMonths()" onmouseout="hideAllMonths()"
+                            onclick="selectMonth(11)">November</li>
+                        <li class="month" onmouseover="showAllMonths()" onmouseout="hideAllMonths()"
+                            onclick="selectMonth(12)">December</li>
+                    </ul>
+                </div>
+                <div class="years">
+                    <input type="number" class="year" id="year" oninput="yearChange()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
